@@ -8,14 +8,12 @@ compatible open source license. */
 export const nodeConfig = new Map<string, object>();
 
 nodeConfig.set('manager', {
-  'node.name': 'manager-node',
   'node.master': true,
   'node.data': false,
   'node.ingest': false,
 });
 
 nodeConfig.set('data', {
-  'node.name': 'data-node',
   'node.master': false,
   'node.data': true,
   'node.ingest': true,
